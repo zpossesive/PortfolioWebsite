@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="titelicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    </style>
+</head>
+<script>
+    var txt = '\u200B Blutrot'; // Fügen Sie ein Zero-Width Space am Anfang des Textes hinzu
+    var speed = 200; // Geschwindigkeit erhöhen, um den Effekt langsamer zu machen
+    var i = 0;
+    var forward = true;
+    
+    function typeWriter() {
+      if (forward && i < txt.length) {
+        document.title += txt.charAt(i);
+        i++;
+        if (i === txt.length) {
+          forward = false;
+          setTimeout(typeWriter, 3000); // 5 Sekunden Pause hinzufügen
+        } else {
+          setTimeout(typeWriter, speed);
+        }
+      } else if (!forward && i > 1) { // Ändern Sie diese Zeile, um immer mindestens einen Buchstaben zu lassen
+        document.title = document.title.slice(0, -1);
+        i--;
+        if (i === 2) { // Ändern Sie diese Zeile, um immer mindestens einen Buchstaben zu lassen
+          forward = true;
+          setTimeout(typeWriter, 2000); // 5 Sekunden Pause hinzufügen
+        } else {
+          setTimeout(typeWriter, speed);
+        }
+      }
+    }
+    
+    typeWriter();
+    </script>
+<body>
+
+        <div class="profile">
+            <img src="picture.png" alt="Bild">
+            <h1>blutrot</h1> 
+        </div>
+
+    
+            <div class="badges">
+                <div id="Nitrobadge">
+                    <img src="Nitro.png" alt="Bild"> 
+                </div>
+                <div id="Boostbadge">
+                    <img src="boost.png" alt="Bild">
+                </div>
+              </div>   
+
+
+        <div class="Icons">
+    <div id="Insta">
+        <a href="https://www.instagram.com/zvmarvin/" target="_blank">
+            <img src="instagram.png" alt="Bild">
+        </a>
+    </div>   
+    <div id="github">
+        <a href="https://github.com/zblutrot" target="_blank">
+            <img src="github.png" alt="Bild">
+        </a>
+    </div>    
+    <div id="discord">
+        <a href="https://discordapp.com/users/435061056608403458" target="_blank">
+            <img src="discord.png" alt="Bild">
+        </a>
+    </div> 
+</div>
+
+     <div style="display: flex; justify-content: center; align-items: flex-start; height: 600px; padding: 0 20px;">
+        <iframe style="border-radius:12px; margin-top: 20px; width: 25%; height: 500px;" src="https://open.spotify.com/embed/playlist/6r5ORfJNn090azj7A5CmzK?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+     </div>
+     <div>
+        <h3>made by blutrot</h3>
+     </div>
+
+   
+</body>
+</html>

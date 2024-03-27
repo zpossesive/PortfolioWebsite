@@ -1,0 +1,79 @@
+body {
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url('bg.gif');
+    background-size: cover; /* Stellt sicher, dass das Hintergrundbild die gesamte Seite abdeckt */
+    background-repeat: no-repeat; /* Verhindert das Wiederholen des Hintergrundbilds */
+    background-position: center; /* Zentriert das Hintergrundbild */
+    cursor: url('cursor.cur'), auto;
+    color: #fff; 
+    overflow: hidden; 
+}
+.profile {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+   
+}
+.profile h1 {
+    margin: 0;
+}
+.profile img {
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 25px;
+    border: 5px solid rgb(40,40,40,255);
+    width: 200px;
+    
+    
+}
+.profile p {
+    margin: 0;
+}
+.badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Erlaubt den Umbruch auf die nächste Zeile */
+    
+}
+.badges img {
+    margin-top: 0;
+    width: 20px; 
+    height: 20px; 
+}
+
+.Icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+   
+}
+
+.Icons img{
+    transition: transform 0.3s ease;
+    margin-top: 0;
+    width: 40px; 
+    height: 40px; 
+    margin: 15px;
+}
+
+.Icons img:hover {
+transform: scale(1.3); 
+ }
+ h3 {
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
