@@ -1,4 +1,4 @@
-# PortfolioWebsite
+# Portfolio Website
 A Small Portfolio Website
 
 - Easy to switch images (just use the same name)
