@@ -16,12 +16,6 @@ A Small Portfolio Website
 - **Modification**: Anyone may modify this code and create their own versions.
 - **Distribution**: Anyone may distribute copies of this code so that others can use it.
 
-## Prohibitions:
-- **Commercial Use**: No one may use this code for commercial purposes. If you want to make money with this code, you must first obtain the author's permission.
-
-## Conditions:
-- **License and Copyright**: Anyone who uses the code must comply with the license conditions and acknowledge the original author's copyright.
-
 ## Disclaimer:
 This code is provided without any warranty. The author is not responsible for any damages that could result from the use of this code.
 
