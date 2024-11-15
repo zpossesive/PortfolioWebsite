@@ -9,8 +9,8 @@
     </style>
 </head>
 <script>
-    var txt = '\u200B Blutrot'; // Fügen Sie ein Zero-Width Space am Anfang des Textes hinzu
-    var speed = 200; // Geschwindigkeit erhöhen, um den Effekt langsamer zu machen
+    var txt = '\u200B Blutrot';
+    var speed = 200;
     var i = 0;
     var forward = true;
     
@@ -20,16 +20,16 @@
         i++;
         if (i === txt.length) {
           forward = false;
-          setTimeout(typeWriter, 3000); // 5 Sekunden Pause hinzufügen
+          setTimeout(typeWriter, 3000); 
         } else {
           setTimeout(typeWriter, speed);
         }
-      } else if (!forward && i > 1) { // Ändern Sie diese Zeile, um immer mindestens einen Buchstaben zu lassen
+      } else if (!forward && i > 1) { 
         document.title = document.title.slice(0, -1);
         i--;
-        if (i === 2) { // Ändern Sie diese Zeile, um immer mindestens einen Buchstaben zu lassen
+        if (i === 2) {
           forward = true;
-          setTimeout(typeWriter, 2000); // 5 Sekunden Pause hinzufügen
+          setTimeout(typeWriter, 2000); 
         } else {
           setTimeout(typeWriter, speed);
         }
